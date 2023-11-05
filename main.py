@@ -4,8 +4,8 @@ from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
-# l'm Hermann Tedjoulemo ngueude and l deploy this Simple Iris Flower Prediction App to show my skill to the world
-This simple machine learning app use RandomForestClassifier to predicts the **Iris flower** type!
+# l'm Hermann tedjoulemo ngueude a JUNIOR DATA SCIENTIST and l deploy this Simple Machine learning App to show my skill to the world
+This machine learning app use RandomForestClassifier to predicts the **Iris flower** type!
 """)
 st.sidebar.header('User Input Parameters')
 def user_input_features():
