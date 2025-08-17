@@ -1,10 +1,8 @@
 # Import librairies
 import streamlit as st
 import pandas as pd
-import altair as alt
 import seaborn as sns
 import matplotlib.pyplot as plt
-import plotly.express as px
 
 # Page Configuration
 st.set_page_config(
@@ -13,7 +11,6 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded")
 
-#alt.themes.enable("dark")
 sns.set(style='dark', context='notebook',
         palette=['#ff5252', '#1de9b6'])
 
@@ -28,10 +25,7 @@ with st.sidebar:
     sex_plot = st.sidebar.selectbox("Situation matrimoniale", sitmat_options)
 
 st.title('Blood Donation Campaign Dashboard')
-##plot_genre=sns.countplot(data=data, x="Genre")
-#st.pyplot(plot_genre.get_figure())
-#plot_eli=sns.countplot(data=data, y="ÉLIGIBILITÉ AU DON.")
-#st.pyplot(plot_eli.get_figure())
+
 
 fig, ax =plt.subplots(3,1)
 sns.countplot(data=data,x="Genre", ax=ax[0])
