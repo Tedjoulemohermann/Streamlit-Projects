@@ -14,7 +14,7 @@ st.set_page_config(
 sns.set(style='dark', context='notebook',
         palette=['#ff5252', '#1de9b6'])
 
-data = pd.read_excel("Updated Challenge dataset.xlsx")
+#data = pd.read_excel("Updated Challenge dataset.xlsx")
 
 # Add a Sidebar
 with st.sidebar:
@@ -26,9 +26,3 @@ with st.sidebar:
 
 st.title('Blood Donation Campaign Dashboard')
 
-
-fig, ax =plt.subplots(3,1)
-sns.countplot(data=data,x="Genre", ax=ax[0])
-sns.countplot(data=data,x="ÉLIGIBILITÉ AU DON.",ax=ax[1])
-sns.histplot(data=data,x="Poids",ax=ax[2])
-st.pyplot(fig)
